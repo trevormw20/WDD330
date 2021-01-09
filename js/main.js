@@ -5,15 +5,12 @@ const links = [
     }
   ]
 
-      let linksDisplay = document.getElementById("links");
+linkList = "<ol>";
+links.forEach(function (element) {
+    console.log(element.url + ", " + element.label);
+    linkList += `<li><a href=${element.url} title='${element.label}'>${element.label}</a></li>`;
+})
 
-      let linkList = "<ol>";
-      links.forEach(function (element) {
-        linkList += "<li><a href='${element.url}' title='${element.label}'>${element.lable}</a></li>"
-      })
-
-      linkList += "</ol>";
+linkList += "</ol>";
       
-
-    linksDisplay.innerHTML = linkList;
-
+document.getElementById("links").innerHTML = linkList;
