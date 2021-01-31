@@ -1,4 +1,5 @@
 .redBanner {
+    left: -.5em;
     background-color: #bb2e13;
     color: #fffffe;
     padding: .5em 2em .5em 1em;
@@ -27,6 +28,7 @@
 
 
 .greenBanner {
+    left: -.5em;
     background-color: #9ec536;
     color: #fffffe;
     padding: .5em 2em .5em 1em;
@@ -54,6 +56,7 @@
 }
 
 .purpleBanner {
+    left: -.5em;
     background-color: #777b9e;
     color: #fffffe;
     padding: .5em 2em .5em 1em;
@@ -86,6 +89,7 @@
 }
 
 .blueBanner {
+    left: -.5em;
     background-color: #3cc0b7;
     color: #fffffe;
     padding: .5em 2em .5em 1em;
@@ -113,6 +117,7 @@
 }
 
 .orangeBanner {
+    left: -.5em;
     background-color: #eba14b;
     color: #fffffe;
     padding: .5em 2em .5em 1em;
@@ -140,6 +145,7 @@
 }
 
 .yellowBanner {
+    left: -.5em;
     background-color: #dac26c;
     color: #fffffe;
     padding: .5em 2em .5em 1em;
@@ -167,6 +173,7 @@
 }
 
 .greyBanner {
+    left: -.5em;
     background-color: #978766;
     color: #fffffe;
     padding: .5em 2em .5em 1em;
@@ -194,7 +201,8 @@
 }
 
 .notes {
-    margin: 3em;
+    
+    margin-left: 4em;
 }
 
 .notes p {
@@ -203,15 +211,24 @@
 
 .questions {}
 
-.week {}
+.week {
+    margin: 1em 0em 0em 3em;
+}
 
 body {
     background-color: rgb(255, 255, 255);
+    padding: 0em 3em 0 3em;
 }
 
 .sidesSpacer {
-    margin: 1em;
-    padding: 1em;
-    /*background-color: white;*/
-    box-shadow: 1 2 grey; 
+    box-shadow: 0 3px 5px 0 rgb(238, 238, 238), 0 5px 10px 0 rgb(216, 216, 216); 
+}
+
+.header {
+    margin: 0em;
+    padding: 1em 0em 0em 1.5em;
+}
+
+.testing {
+    margin-left: 2em;
 }
