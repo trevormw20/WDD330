@@ -202,11 +202,11 @@
 
 .notes {
     
-    margin-left: 4em;
+    margin-left: 2em;
 }
 
 .notes p {
-    margin-left: 4em;
+    margin-left: 2em;
 }
 
 .questions {}
@@ -217,7 +217,7 @@
 
 body {
     background-color: rgb(255, 255, 255);
-    padding: 0em 3em 0 3em;
+    padding: 0em 3em 3em 3em;
 }
 
 .sidesSpacer {
