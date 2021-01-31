@@ -1,50 +1,196 @@
 .redBanner {
     background-color: #bb2e13;
     color: #fffffe;
-    padding: 1em;
-
-    box-shadow: inset 0px 1px 0px rgba(255,255,255,.3),
-					inset 0px 0px 20px rgba(0,0,0,0.1),
-                    0px 1px 1px rgba(0,0,0,0.4);
-                    
-  /*optional to shorten bar going across
-  // display: inline-block;
-  */
+    padding: .5em 2em .5em 1em;
+    text-align: center;
+    font: 100x ;
+    font-family: 'Lobster', cursive;
+    position: relative;
+    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, .3),
+        inset 0px 0px 20px #0000001a,
+        0px 1px 1px rgba(0, 0, 0, 0.4);
+        display: inline-block;
 }
 
-.redBanner::before {
+.redBanner:before {
     left: 0;
     border-width: .5em 0 0 .5em;
+    content: "";
+    bottom: -.5em;
+    position: absolute;
+    display: block;
+    border-style: solid;
+    border-color: #92220c transparent transparent transparent;
+    z-index: -1;
+
 }
+
 
 .greenBanner {
     background-color: #9ec536;
     color: #fffffe;
-    padding: 1em;
+    padding: .5em 2em .5em 1em;
+    text-align: center;
+    font: 100x ;
+    font-family: 'Lobster', cursive;
+    position: relative;
+    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, .3),
+        inset 0px 0px 20px rgba(0, 0, 0, 0.1),
+        0px 1px 1px rgba(0, 0, 0, 0.4);
+        display: inline-block;
+}
 
-    box-shadow: inset 0px 1px 0px rgba(255,255,255,.3),
-					inset 0px 0px 20px rgba(0,0,0,0.1),
-                    0px 1px 1px rgba(0,0,0,0.4);
+.greenBanner:before {
+    left: 0;
+    border-width: .5em 0 0 .5em;
+    content: "";
+    bottom: -.5em;
+    position: absolute;
+    display: block;
+    border-style: solid;
+    border-color: #708b25 transparent transparent transparent;
+    z-index: -1;
+
 }
 
 .purpleBanner {
     background-color: #777b9e;
+    color: #fffffe;
+    padding: .5em 2em .5em 1em;
+    text-align: center;
+    font: 100x ;
+    font-family: 'Lobster', cursive;
+    position: relative;
+    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, .3),
+        inset 0px 0px 20px rgba(0, 0, 0, 0.1),
+        0px 1px 1px rgba(0, 0, 0, 0.4);
+        display: inline-block;
+}
+
+.purpleBanner:before {
+    left: 0;
+    border-width: .5em 0 0 .5em;
+    content: "";
+    bottom: -.5em;
+    position: absolute;
+    display: block;
+    border-style: solid;
+    border-color: #4b5185 transparent transparent transparent;
+    z-index: -1;
+
+}
+.purpleBanner a {
+    list-style: none;
+    color: #fffffe;
+    font-size: x-large;
 }
 
 .blueBanner {
     background-color: #3cc0b7;
+    color: #fffffe;
+    padding: .5em 2em .5em 1em;
+    text-align: center;
+    font: 100x ;
+    font-family: 'Lobster', cursive;
+    position: relative;
+    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, .3),
+        inset 0px 0px 20px rgba(0, 0, 0, 0.1),
+        0px 1px 1px rgba(0, 0, 0, 0.4);
+        display: inline-block;
+}
+
+.blueBanner:before {
+    left: 0;
+    border-width: .5em 0 0 .5em;
+    content: "";
+    bottom: -.5em;
+    position: absolute;
+    display: block;
+    border-style: solid;
+    border-color: #2b968f transparent transparent transparent;
+    z-index: -1;
+
 }
 
 .orangeBanner {
     background-color: #eba14b;
+    color: #fffffe;
+    padding: .5em 2em .5em 1em;
+    text-align: center;
+    font: 100x ;
+    font-family: 'Lobster', cursive;
+    position: relative;
+    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, .3),
+        inset 0px 0px 20px rgba(0, 0, 0, 0.1),
+        0px 1px 1px rgba(0, 0, 0, 0.4);
+        display: inline-block;
+}
+
+.orangeBanner:before {
+    left: 0;
+    border-width: .5em 0 0 .5em;
+    content: "";
+    bottom: -.5em;
+    position: absolute;
+    display: block;
+    border-style: solid;
+    border-color: #cc8a3f transparent transparent transparent;
+    z-index: -1;
+
 }
 
 .yellowBanner {
-    background-color: #dac26c
+    background-color: #dac26c;
+    color: #fffffe;
+    padding: .5em 2em .5em 1em;
+    text-align: center;
+    font: 100x ;
+    font-family: 'Lobster', cursive;
+    position: relative;
+    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, .3),
+        inset 0px 0px 20px rgba(0, 0, 0, 0.1),
+        0px 1px 1px rgba(0, 0, 0, 0.4);
+        display: inline-block;
+}
+
+.yellowBanner:before {
+    left: 0;
+    border-width: .5em 0 0 .5em;
+    content: "";
+    bottom: -.5em;
+    position: absolute;
+    display: block;
+    border-style: solid;
+    border-color: #bba556 transparent transparent transparent;
+    z-index: -1;
+
 }
 
 .greyBanner {
     background-color: #978766;
+    color: #fffffe;
+    padding: .5em 2em .5em 1em;
+    text-align: center;
+    font: 100x ;
+    font-family: 'Lobster', cursive;
+    position: relative;
+    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, .3),
+        inset 0px 0px 20px rgba(0, 0, 0, 0.1),
+        0px 1px 1px rgba(0, 0, 0, 0.4);
+        display: inline-block;
+}
+
+.greyBanner:before {
+    left: 0;
+    border-width: .5em 0 0 .5em;
+    content: "";
+    bottom: -.5em;
+    position: absolute;
+    display: block;
+    border-style: solid;
+    border-color: #807154 transparent transparent transparent;
+    z-index: -1;
+
 }
 
 .notes {
@@ -60,12 +206,12 @@
 .week {}
 
 body {
-    background-color: whitesmoke;
+    background-color: rgb(255, 255, 255);
 }
 
 .sidesSpacer {
     margin: 1em;
     padding: 1em;
-    background-color: white;
-    box-shadow: 1 2 grey;
+    /*background-color: white;*/
+    box-shadow: 1 2 grey; 
 }

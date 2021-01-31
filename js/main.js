@@ -20,7 +20,7 @@ const links = [
 linkList = "<ol>";
 links.forEach(function (element) {
     console.log(element.url + ", " + element.label);
-    linkList += `<li><a href=${element.url} title='${element.label}'>${element.label}</a></li>`;
+    linkList += `<li class="purpleBanner"><a href=${element.url} title='${element.label}'>${element.label}</a></li><br><br>`;
 })
 
 linkList += "</ol>";
