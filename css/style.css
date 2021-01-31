@@ -1,0 +1,71 @@
+.redBanner {
+    background-color: #bb2e13;
+    color: #fffffe;
+    padding: 1em;
+
+    box-shadow: inset 0px 1px 0px rgba(255,255,255,.3),
+					inset 0px 0px 20px rgba(0,0,0,0.1),
+                    0px 1px 1px rgba(0,0,0,0.4);
+                    
+  /*optional to shorten bar going across
+  // display: inline-block;
+  */
+}
+
+.redBanner::before {
+    left: 0;
+    border-width: .5em 0 0 .5em;
+}
+
+.greenBanner {
+    background-color: #9ec536;
+    color: #fffffe;
+    padding: 1em;
+
+    box-shadow: inset 0px 1px 0px rgba(255,255,255,.3),
+					inset 0px 0px 20px rgba(0,0,0,0.1),
+                    0px 1px 1px rgba(0,0,0,0.4);
+}
+
+.purpleBanner {
+    background-color: #777b9e;
+}
+
+.blueBanner {
+    background-color: #3cc0b7;
+}
+
+.orangeBanner {
+    background-color: #eba14b;
+}
+
+.yellowBanner {
+    background-color: #dac26c
+}
+
+.greyBanner {
+    background-color: #978766;
+}
+
+.notes {
+    margin: 3em;
+}
+
+.notes p {
+    margin-left: 4em;
+}
+
+.questions {}
+
+.week {}
+
+body {
+    background-color: whitesmoke;
+}
+
+.sidesSpacer {
+    margin: 1em;
+    padding: 1em;
+    background-color: white;
+    box-shadow: 1 2 grey;
+}
