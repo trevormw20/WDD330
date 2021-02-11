@@ -13,7 +13,7 @@ for (i = 0; i < myNodelist.length; i++) {
 var close = document.getElementsByClassName("close");
 var i;
 for (i = 0; i < close.length; i++) {
-  close[i].onclick = function() {
+  close[i].onclick = function () {
     var div = this.parentElement;
     div.style.display = "none";
   }
@@ -21,7 +21,7 @@ for (i = 0; i < close.length; i++) {
 
 // Add a "checked" symbol when clicking on a list item
 var list = document.querySelector('ul');
-list.addEventListener('click', function(ev) {
+list.addEventListener('click', function (ev) {
   if (ev.target.tagName === 'LI') {
     ev.target.classList.toggle('checked');
   }
@@ -47,7 +47,7 @@ function newTask() {
   li.appendChild(span);
 
   for (i = 0; i < close.length; i++) {
-    close[i].onclick = function() {
+    close[i].onclick = function () {
       var div = this.parentElement;
       div.style.display = "none";
     }
@@ -55,26 +55,31 @@ function newTask() {
 }
 
 function selectAll() {
+  list = document.getElementById("listHolder");
 
+  li = list.getElementsByTagName("li");
+
+  for (i = 0; i < (li.length - 1); i++) {
+    li[i].style.display = "block";
+  }
 }
 
 function selectActive() {
   list = document.getElementById("listHolder");
 
-    li = list.getElementsByTagName("li");
-    // Loop through all list-items:
-    for (i = 0; i < (li.length - 1); i++) {
-      if (li[i].getElementsByClassName == "checked") {
-        li[i].style.display = "block";
-      }
-      else {
-        li[i].style.display = "none";
-      }
-        
+  li = list.getElementsByTagName("li");
+
+  for (i = 0; i < (li.length - 1); i++) {
+    if (li[i].getElementsByClassName == "checked") {
+      li[i].style.display = "block";
+    } else {
+      li[i].style.display = "none";
+    }
+
   }
-  
+
 }
 
 function selectCompleted() {
-  
+
 }
