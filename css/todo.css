@@ -96,7 +96,7 @@
   }
   
   /* Style the "Add" button */
-  .addBtn {
+  .addTask {
     padding: 10px;
     width: 25%;
     background: #d9d9d9;
@@ -109,6 +109,6 @@
     border-radius: 0;
   }
   
-  .addBtn:hover {
+  .addTask:hover {
     background-color: #bbb;
   }

@@ -28,17 +28,17 @@ list.addEventListener('click', function(ev) {
 }, false);
 
 // Create a new list item when clicking on the "Add" button
-function newElement() {
+function newTask() {
   var li = document.createElement("li");
-  var inputValue = document.getElementById("myInput").value;
+  var inputValue = document.getElementById("addTask").value;
   var t = document.createTextNode(inputValue);
   li.appendChild(t);
   if (inputValue === '') {
     alert("You must write something!");
   } else {
-    document.getElementById("myUL").appendChild(li);
+    document.getElementById("listHolder").appendChild(li);
   }
-  document.getElementById("myInput").value = "";
+  document.getElementById("addTask").value = "";
 
   var span = document.createElement("SPAN");
   var txt = document.createTextNode("\u00D7");
@@ -52,4 +52,29 @@ function newElement() {
       div.style.display = "none";
     }
   }
+}
+
+function selectAll() {
+
+}
+
+function selectActive() {
+  list = document.getElementById("listHolder");
+
+    li = list.getElementsByTagName("li");
+    // Loop through all list-items:
+    for (i = 0; i < (li.length - 1); i++) {
+      if (li.getElementsByClassName == "checked") {
+        li.style.display == "block";
+      }
+      else {
+        li.style.display == "none";
+      }
+        
+  }
+  
+}
+
+function selectCompleted() {
+  
 }
