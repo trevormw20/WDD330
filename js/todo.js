@@ -73,7 +73,7 @@ function selectActive() {
   li = list.getElementsByTagName("li");
 
   for (i = 0; i < (li.length - 1); i++) {
-    if (li[i].checked) {
+    if (li[i].hasClass('checked')) {
       li[i].style.display = "block";
     } else {
       li[i].style.display = "none";
@@ -93,7 +93,7 @@ function taskLeft() {
   li = list.getElementsByTagName("li");
   taskLeftnumber = li.length;
   for (i = 0; i < (li.length - 1); i++) {
-    if (li[i].checked) {
+    if (li[i].hasClass('checked')) {
       taskLeftnumber--;
     }
   }
