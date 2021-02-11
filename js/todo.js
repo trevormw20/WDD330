@@ -73,7 +73,7 @@ function selectActive() {
   li = list.getElementsByTagName("li");
 
   for (i = 0; i < (li.length - 1); i++) {
-    if (li[i].getElementsByClassName == "checked") {
+    if (li[i].checked) {
       li[i].style.display = "block";
     } else {
       li[i].style.display = "none";
@@ -93,9 +93,9 @@ function taskLeft() {
   li = list.getElementsByTagName("li");
   taskLeftnumber = li.length;
   for (i = 0; i < (li.length - 1); i++) {
-    if (li[i].getElementsByClassName == "checked") {
+    if (li[i].checked) {
       taskLeftnumber--;
     }
   }
-  taskLeft.insertAdjacentHTML('beforeBegin', taskLeftnumber);
+  taskLeft.insertAdjacentHTML('beforeBegin', taskLeftnumber + " tasks left");
 }
