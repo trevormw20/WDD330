@@ -64,11 +64,11 @@ function selectActive() {
     li = list.getElementsByTagName("li");
     // Loop through all list-items:
     for (i = 0; i < (li.length - 1); i++) {
-      if (li.getElementsByClassName == "checked") {
-        li.style.display == "block";
+      if (li[i].getElementsByClassName == "checked") {
+        li[i].style.display == "block";
       }
       else {
-        li.style.display == "none";
+        li[i].style.display == "none";
       }
         
   }
