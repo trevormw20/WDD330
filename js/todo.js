@@ -65,10 +65,10 @@ function selectActive() {
     // Loop through all list-items:
     for (i = 0; i < (li.length - 1); i++) {
       if (li[i].getElementsByClassName == "checked") {
-        li[i].style.display == "block";
+        li[i].style.display = "block";
       }
       else {
-        li[i].style.display == "none";
+        li[i].style.display = "none";
       }
         
   }
