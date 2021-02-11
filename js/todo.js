@@ -73,8 +73,6 @@ function selectActive() {
   li = list.getElementsByTagName("li");
 
   for (i = 0; i < (li.length - 1); i++) {
-    if(document.getElementById('element').classList.contains("class_one")) {
-  }
     if (li[i].classList.contains("checked")) {
       li[i].style.display = "block";
     } else {
