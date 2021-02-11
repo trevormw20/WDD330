@@ -1,6 +1,7 @@
 // Create a "close" button and append it to each list item
 var myNodelist = document.getElementsByTagName("LI");
 var i;
+taskLeft();
 for (i = 0; i < myNodelist.length; i++) {
   var span = document.createElement("SPAN");
   var txt = document.createTextNode("\u00D7");
@@ -25,6 +26,7 @@ list.addEventListener('click', function (ev) {
   if (ev.target.tagName === 'LI') {
     ev.target.classList.toggle('checked');
   }
+  taskLeft();
 }, false);
 
 // Create a new list item when clicking on the "Add" button
@@ -52,6 +54,7 @@ function newTask() {
       div.style.display = "none";
     }
   }
+  taskLeft();
 }
 
 function selectAll() {
@@ -82,4 +85,17 @@ function selectActive() {
 
 function selectCompleted() {
 
+}
+
+function taskLeft() {
+  taskLeft = document.getElementById("taskLeft");
+  list = document.getElementById("listHolder");
+  li = list.getElementsByTagName("li");
+  taskLeftnumber = li.length;
+  for (i = 0; i < (li.length - 1); i++) {
+    if (li[i].getElementsByClassName == "checked") {
+      taskLeftnumber--;
+    }
+  }
+  taskLeft.insertAdjacentHTML('beforeBegin', taskLeftnumber);
 }
