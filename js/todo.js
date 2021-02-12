@@ -103,7 +103,7 @@ function taskLeft() {
   list = document.getElementById("listHolder");
   li = list.getElementsByTagName("li");
   taskLeftnumber = li.length;
-  for (i = 0; i < (li.length - 1); i++) {
+  for (i = 0; i < (li.length); i++) {
     if (li[i].classList.contains("checked")) {
       taskLeftnumber--;
     }
