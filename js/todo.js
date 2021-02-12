@@ -62,7 +62,7 @@ function selectAll() {
 
   li = list.getElementsByTagName("li");
 
-  for (i = 0; i < (li.length - 1); i++) {
+  for (i = 0; i < (li.length); i++) {
     li[i].style.display = "block";
   }
 }
@@ -72,11 +72,11 @@ function selectActive() {
 
   li = list.getElementsByTagName("li");
 
-  for (i = 0; i < (li.length - 1); i++) {
+  for (i = 0; i < (li.length); i++) {
     if (li[i].classList.contains("checked")) {
-      li[i].style.display = "block";
-    } else {
       li[i].style.display = "none";
+    } else {
+      li[i].style.display = "block";
     }
 
   }
@@ -84,7 +84,18 @@ function selectActive() {
 }
 
 function selectCompleted() {
+  list = document.getElementById("listHolder");
 
+  li = list.getElementsByTagName("li");
+
+  for (i = 0; i < (li.length); i++) {
+    if (li[i].classList.contains("checked")) {
+      li[i].style.display = "block";
+    } else {
+      li[i].style.display = "none";
+    }
+
+  }
 }
 
 function taskLeft() {
