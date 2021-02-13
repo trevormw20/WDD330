@@ -102,3 +102,7 @@
     transition: 0.3s;
     border-radius: 0;
   }
+
+  #frame {
+    max-width: 50%;
+  }
