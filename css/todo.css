@@ -60,7 +60,6 @@
     padding: 1em;
     color: white;
     text-align: center;
-    max-width: 50%;
   }
   .header:after {
     content: "";
@@ -104,6 +103,6 @@
     border-radius: 0;
   }
 
-  main {
+  body {
     max-width: 50%;
   }
