@@ -103,6 +103,8 @@ function taskLeft() {
     if (li[i].classList.contains("checked")) {
       taskLeftnumber--;
     }
+    else
+    taskLeftnumber--;
   }
-  taskLeft.replaceHTML('beforeBegin', taskLeftnumber + " tasks left");
+  taskLeft.insertAdjacentHTML('beforeBegin', taskLeftnumber + " tasks left");
 }
