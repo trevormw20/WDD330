@@ -1,6 +1,7 @@
 var myNodelist = document.getElementsByTagName("LI");
 var i;
-taskLeft();
+var taskLeftnumber = 0;
+taskLeftStart();
 for (i = 0; i < myNodelist.length; i++) {
   var span = document.createElement("SPAN");
   var txt = document.createTextNode("\u00D7");
@@ -22,6 +23,8 @@ var list = document.querySelector('ul');
 list.addEventListener('click', function (ev) {
   if (ev.target.tagName === 'LI') {
     ev.target.classList.toggle('checked');
+    taskLeftnumber--;
+    updateTaskLeft();
   }
 }, false);
 
@@ -94,17 +97,18 @@ function selectCompleted() {
   }
 }
 
-function taskLeft() {
-  taskLeft = document.getElementById("taskLeft");
+function taskLeftStart() { 
   list = document.getElementById("listHolder");
   li = list.getElementsByTagName("li");
   taskLeftnumber = li.length;
   for (i = 0; i < (li.length); i++) {
     if (li[i].classList.contains("checked")) {
-      //taskLeftnumber--;
+      taskLeftnumber--;
     }
-    else
-    taskLeftnumber--;
-  }
+  } 
+}
+
+function updateTaskLeft() {
+  taskLeft = document.getElementById("taskLeft");
   taskLeft.insertAdjacentHTML('beforeBegin', taskLeftnumber + " tasks left");
 }
