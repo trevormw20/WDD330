@@ -106,9 +106,11 @@ function taskLeftStart() {
       taskLeftnumber--;
     }
   } 
+  taskLeft = document.getElementById("taskLeft");
+  taskLeft.insertAdjacentHTML('beforeBegin', taskLeftnumber + " tasks left");
 }
 
 function updateTaskLeft() {
   taskLeft = document.getElementById("taskLeft");
-  taskLeft.insertAdjacentHTML('beforeBegin', taskLeftnumber + " tasks left");
+  taskLeft.replaceHTML('beforeBegin', taskLeftnumber + " tasks left");
 }
