@@ -112,5 +112,5 @@ function taskLeftStart() {
 
 function updateTaskLeft() {
   taskLeft = document.getElementById("taskLeft");
-  taskLeft.replaceHTML( taskLeftnumber + " tasks left");
+  taskLeft.textContent( taskLeftnumber + " tasks left");
 }
