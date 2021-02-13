@@ -104,5 +104,5 @@ function taskLeft() {
       taskLeftnumber--;
     }
   }
-  taskLeft.insertAdjacentHTML('beforeBegin', taskLeftnumber + " tasks left");
+  taskLeft.replaceHTML('beforeBegin', taskLeftnumber + " tasks left");
 }
