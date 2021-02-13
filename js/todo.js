@@ -101,7 +101,7 @@ function taskLeft() {
   taskLeftnumber = li.length;
   for (i = 0; i < (li.length); i++) {
     if (li[i].classList.contains("checked")) {
-      taskLeftnumber--;
+      //taskLeftnumber--;
     }
     else
     taskLeftnumber--;
