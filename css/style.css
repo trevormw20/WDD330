@@ -232,3 +232,25 @@ body {
 .testing {
     margin-left: 2em;
 }
+
+.blueStripe {
+    height: 10px; 
+    border-width: 0; 
+    color: #32586D; 
+    background-color: #32586D;
+    box-shadow: 0px 1px 5px 0.2px  #45728a ;
+}
+.beigeStripe {
+    height: 10px; 
+    border-width: 0; 
+    color: #DFDCC9; 
+    background-color: #DFDCC9;
+    box-shadow: 0px 1px 5px 0.2px  #e7e6da ;
+}
+.redStripe {
+    height: 10px; 
+    border-width: 0; 
+    color: #CA3032; 
+    background-color: #CA3032;
+    box-shadow: 0px 1px 5px 0.2px  #da4749 ;
+}

@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-size: cover;
+    background-position: top center;
+  }
+  
+  .app-wrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: #F3F5F2;
+  }
+  
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px 15px;
+  }
+  
+  header input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    background-color: #dfdcc952;
+    border-radius: 20px 20px 20px 20px;
+    border-bottom: 3px solid #B2D1D6;
+    
+    color: #313131;
+    font-size: 20px;
+    font-weight: 300;
+    transition: 0.2s ease-out;
+  }
+  
+  header input:focus {
+    background-color: #b2d1d67c;
+  }
+  
+  main {
+    flex: 1 1 100%;
+    padding: 25px 25px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .location .city {
+    font-family: 'Lobster Two', cursive;
+    color: #32586D;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  
+  .location .date {
+    color: #32586D;
+    font-size: 16px;
+  }
+  
+  .current .temp {
+    color: #32586D;
+    font-size: 102px;
+    font-weight: 900;
+    margin: 30px 0px;
+
+  }
+  
+  .current .temp span {
+    font-weight: 500;
+  }
+  
+  .current .weather {
+    color: #32586D;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+  .current .hiAndLow {
+    color: #32586D;
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  .current .windChill {
+    color: rgb(159, 162, 219);
+    font-size: 24px;
+    font-weight: 500;
+
+  }
+
+  .blueStripe {
+    height: 10px; 
+    border-width: 0; 
+    color: #32586D; 
+    background-color: #32586D;
+    box-shadow: 0px 1px 5px 0.2px  #45728a ;
+    margin-bottom: 5px;
+}
+.beigeStripe {
+    height: 10px; 
+    border-width: 0; 
+    color: #DFDCC9; 
+    background-color: #DFDCC9;
+    box-shadow: 0px 1px 5px 0.2px  #e7e6da ;
+    margin-bottom: 5px;
+}
+.redStripe {
+    height: 10px; 
+    border-width: 0; 
+    color: #CA3032; 
+    background-color: #CA3032;
+    box-shadow: 0px 1px 5px 0.2px  #da4749 ;
+}
