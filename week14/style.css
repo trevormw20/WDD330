@@ -122,3 +122,15 @@
     background-color: #CA3032;
     box-shadow: 0px 1px 5px 0.2px  #da4749 ;
 }
+
+p {
+  max-width: 40%;
+  margin: 2em;
+  color: #32586D;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 {
+  color: #32586D;
+  font-family: 'Lobster Two', cursive;
+}
